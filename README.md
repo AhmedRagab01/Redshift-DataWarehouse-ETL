@@ -1,11 +1,18 @@
 
 ### Project Overview
-Sparkify is a music streaming startup that want to move their userbase and song database onto the cloud as they scaling up, 
-Their data is stored now on AWS S3 in JSON format for both user logs and songs data.
+Project Overview
+Sparkify, a growing music streaming startup, is scaling its infrastructure and migrating its user and song databases to the cloud. Their data is currently stored in AWS S3 in JSON format, containing both user activity logs and song metadata.
+
+---
 
 **Task**:<br>
 
-Building an ETL pipeline that extract data from S3, stage them in two tables on Redshift, and transforms data then loading it into a set of dimensional tables to be used by their analytical team.
+The goal is to design and implement a robust ETL (Extract, Transform, Load) pipeline that:
+
+- Extracts raw data from S3.
+- Stages the data in Amazon Redshift using two staging tables.
+- Transforms the staged data into a structured dimensional model.
+- Loads the transformed data into fact and dimension tables, enabling the analytics team to gain insights into user behavior and song preferences.
 
 ---
 
